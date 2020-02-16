@@ -41,7 +41,8 @@ $ npm start
 ```
 
 本demo使用如下Azure技术
-    Azure Storage (视频存储)
+
+    Azure Storage (视频存储) 
     Azure Functions
     Azure SignalR
     Cosmos DB's Table API
