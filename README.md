@@ -4,7 +4,7 @@ Code samples for Azure SignalR Service, to demonstrate typical real-time web sce
 
 ## Demo
 
-Corona Virus Pneumonia Status real-time update: a demo application built with Azure SignalR Service, Azure Functions, Azure Cosmos DB, Azure Stroage and Azure Cognitive Service, to showcase the real-time web capability in some typical real-time web scenarios.
+**Corona Virus Pneumonia Status real-time update**: a demo application built with Azure SignalR Service, Azure Functions, Azure Cosmos DB, Azure Stroage and Azure Cognitive Service, to showcase the real-time web capability in some typical real-time web scenarios.
 
 ## Resources
 
