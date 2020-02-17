@@ -8,11 +8,11 @@ Code samples for Azure SignalR Service, to demonstrate typical real-time web sce
 Screenshot:
 ![Screenshot](CoronavirusPneumoniaProgramDemo/sceenshots/screenshot1.jpg)
 
-[How-to](CoronavirusPneumoniaProgramDemo/readme.md)
+[How-to](CoronavirusPneumoniaProgramDemo/README.md)
 
 **Flight Map**: a demo to show how to plot geo locations in real-time on a map.
 
-[How-to](FlightMap/readme.md)
+[How-to](FlightMap/README.md)
 
 ## Resources
 
