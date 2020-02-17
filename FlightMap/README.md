@@ -10,7 +10,7 @@ In this sample, the data is generated in a web app by reading from a JSON file o
 
 Here is a diagram that illustrates the application structure:
 
-![flightmap](../../docs/images/flightmap.png)
+![flightmap](./images/flightmap.png)
 
 In real world scenarios you can replace the web server and the blob storage with a component that generates actual live data.
 
