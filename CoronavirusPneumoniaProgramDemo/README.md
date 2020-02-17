@@ -2,6 +2,9 @@
 
 2020年初，新型冠状病毒疫情使得中国很多人在家远程工作或者学习，获得消息的时效性和远程的实时沟通显得特别重要。很多中小微企业和个人并未做好充分的技术准备，使得突如其来的疫情打乱了很多的日常工作安排。很多典型的实时场景，其实可以通过微软几种云服务组合起来，经过简单的开发就可以实现。这个平台就是基于此目的，展示如何快速在微软云搭建一些典型的实时功能。希望我们的实例可以激发更多开发人员快速上手，开发出各种有效的实时应用。这也是我们微软部分员工在此时刻的小小贡献。
 
+演示程序截图:
+![Screenshot](sceenshots/screenshot1.jpg)
+
 # 客户端配置文件
 
 本地开发需要准备 [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) Speech API 密钥。然后填写到 .env.development.local 文件。生产发布请配置 .env.production 文件。
