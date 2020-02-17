@@ -2,7 +2,7 @@
 
 This sample shows how to use Azure SignalR Service to build a realtime monitoring dashboard. Open the application, and you'll see flight locations in realtime.
 
-A live demo can be found [here](https://signalr-flightmap-demo.azurewebsites.net/).
+
 
 ## How does it work?
 
