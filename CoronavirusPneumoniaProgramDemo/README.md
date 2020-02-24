@@ -5,27 +5,33 @@
 演示程序截图:
 ![Screenshot](sceenshots/screenshot1.jpg)
 
-# 客户端配置文件
-
-本地开发需要准备 [Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/) Speech API 密钥。然后填写到 .env.development.local 文件。生产发布请配置 .env.production 文件。
+# 客户端应用配置
+1. 在Azure管理门户中创建Speech服务，获取服务密钥及区域。[参考](https://docs.microsoft.com/zh-cn/azure/cognitive-services/speech-service/get-started#try-the-speech-service-using-a-new-azure-account)
+2. 将获取的信息添加到本地开发配置文件.env.development.local中对应的**REACT_APP_SPEECH_KEY**以及**REACT_APP_SPEECH_REGION**配置项。
+3. **REACT_APP_API_BASE_URL**为服务端应用的地址链接
 
 ```
-# .env.development.local
 REACT_APP_API_BASE_URL=
 REACT_APP_SPEECH_KEY=
 REACT_APP_SPEECH_REGION=
-
-# 本地运行命令如下
+```
+3. 本地运行客户端应用可使用如下命令
+```
 $ npm i
 $ npm start
 ```
 
-# Azure function 配置文件
+4. 客户端应用可正式环境可发布到Azure应用服务甚至是Azure存储服务的"静态网站", 发布前请将添加以上配置信息到 .env.production 文件中。
 
-需要准备 [Azure SignalR](https://azure.microsoft.com/services/signalr-service/) 和 [Azure CosmosDB](https://azure.microsoft.com/services/cosmos-db/) 服务。本地调试请复制连接字符串到 local.settings.json 文件。生产发布请将两个连接字符串添加到 function 配置，还需将前端应用的 URL 配置到 function 的 CORS。
+
+# 服务端应用配置
+1. 在本地通过Azure Functions模拟器运行服务端程序，需添加**local.settings.json**配置文件。
+2. 在Azure管理门户中创建SignalR服务，获取服务连接字符串，添加的到配置文件中的**AzureSignalRConnectionString**配置项。
+3. 在Azure管理门户中创建Cosmos DB，获取数据库连接字符串，添加的到配置文件中的**DBSettings**下的**StorageConnectionString**配置项。
+4. 部署服务端应用需在Azure管理门户创建Functions服务，并将以上信息配置到对应的Functions配置信息中。
+5. 还需将Functions服务的CORS功能启用，并将客户端应用的发布连接添加至CORS记录，以允许客户端应用可以调用此服务端。
 
 ```
-# local.settings.json
 {
   "IsEncrypted": false,
   "Values": {
@@ -43,12 +49,6 @@ $ npm start
 }
 ```
 
-本demo使用如下Azure技术
-
-    Azure Storage (视频存储) 
-    Azure Functions
-    Azure SignalR
-    Cosmos DB's Table API
-    Azure Cognitive Service (Text to Speech)
-
-修改视频链接请更改 VideoPart.js 文件。
+# 其他
+1. 修改视频链接可在客户端代码中修改VideoPart.js。
+2. 在本开源代码基础之上还可进行二次开发以添加更多自定义场景。例如通过Azure翻译服务将文字弹幕翻译成多国语言，或者使用Azure媒体服务将高清及超大视频文件编码处理以获得更流畅的播放体验。还可以使用媒体服务的直播功能，增加实时直播功能。
