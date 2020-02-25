@@ -6,7 +6,7 @@
 ![Screenshot](sceenshots/screenshot1.jpg)
 
 # 客户端应用配置
-1. 在Azure管理门户中创建Speech服务，获取服务密钥及区域。[参考](https://docs.microsoft.com/zh-cn/azure/cognitive-services/speech-service/get-started#try-the-speech-service-using-a-new-azure-account)
+1. 在Azure管理门户中创建Speech服务，获取服务密钥及区域。[参考](https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started#try-the-speech-service-using-a-new-azure-account)
 2. 将获取的信息添加到本地开发配置文件.env.development.local中对应的**REACT_APP_SPEECH_KEY**以及**REACT_APP_SPEECH_REGION**配置项。
 3. **REACT_APP_API_BASE_URL**为服务端应用的地址链接
 

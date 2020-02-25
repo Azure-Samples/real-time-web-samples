@@ -28,4 +28,4 @@
 - [Azure SignalR Service document](https://aka.ms/signalr_service_doc)
 - [Azure SignalR Service product page](https://azure.microsoft.com/services/signalr-service/)
 - [Azure SignalR Service overview](https://dotnet.microsoft.com/apps/aspnet/signalr/service)
-- [Azure Cognitive Speech Service](https://azure.microsoft.com/en-us/services/cognitive-services/speech-services/)
+- [Azure Cognitive Speech Service](https://azure.microsoft.com/services/cognitive-services/speech-services/)
